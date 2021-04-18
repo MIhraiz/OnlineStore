@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Reg.js"></script>
+</head>
+<body>
+
+<form method="POST">
+    <fieldset>
+        <legend>Register</legend>
+    <section id="regData">
+
+        <label for="userId" class="lbTxt required">ID Number: </label>
+        <input type="text" pattern="\d*" name="userId" id="userId" placeholder="ID Number" minlength="10" maxlength="10" required="true">
+        <br>
+        <label for="realName" class="lbTxt required">Name: </label>
+        <input type="text" name="realName" id="realName" placeholder="Real Name" maxlength="40" required="true">
+        <br>
+
+        <label for="birthDate" class=" required">Birthdate </label>
+        <input type="date" name="birthDate" id="birthDate" required="true">
+        <br>
+
+        <label for="Email" class="required">E-mail: </label>
+        <input type="email" name="Email" id="Email" placeholder="E-mail" required="true">
+        <br>
+
+        <label for="phone" class="required">Phone Number: </label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required="true">
+        <br>
+
+        <label for="fax" class="required">Fax Number: </label>
+        <input type="tel" name="fax" id="fax" placeholder="Fax Number" required="true">
+        <br>
+
+        <label for="address" class="lbTxt required">Confirm Password </label>
+        <input type="text" name="address" id="address" placeholder="Address" maxlength="50" required="true">
+        <br>
+
+        <label for="cardNum" class="lbTxt required">Card Number </label>
+        <input type="text" pattern="\d*" name="cardNum" id="cardNum" placeholder="xxxx xxxx xxxx xxxx" minlength="16" maxlength="16" required="true">
+        <br>
+
+        <label for="expDate" class="required">Expired Date </label>
+        <input type="date" name="expDate" id="expDate" required="true">
+        <br>
+        <label for="cardName" class="lbTxt required">Card Holder Name </label>
+        <input type="text" name="cardName" id="cardName" placeholder="Card Holder Name" maxlength="30" required="true">
+        <br>
+        <label for="bank" class="lbTxt required">Bank Name </label>
+        <input type="text" name="bank" id="bank" placeholder="Bank Name" maxlength="30" required="true">
+        <br>
+
+
+        <hr style="width:50%;text-align:left;margin-left:0">
+        <br>
+
+
+        <button type="confirm" id="regBu" onclick="disable();">Confirm</button>
+        <br>
+        <input id="reset" type="reset" name="reset" value="Clear" onclick="enable()">
+        <br>
+
+
+    </section>
+
+    <br>
+    <hr style="width:50%;text-align:left;margin-left:0">
+    <br>
+
+    <section id="submitBut" style="display: none">
+
+        <button type="cancle" id="canlceBu" onclick="enable(); showEAccount('none');">Update </button>
+        <br>
+        <button type="confirm" id="regBut" onclick="showEAccount('block'); valid();">Confirm</button>
+
+    </section>
+
+    <br>
+    <hr style="width:50%;text-align:left;margin-left:0">
+    <br>
+
+    <section id="E-account" style="display: none">
+
+        <label for="UserName" class="lbTxt required">User Name </label>
+        <input type="text" name="UserName" id="UserName" required="true">
+        <br>
+
+        <label for="password" class="required">Password: </label>
+        <th><input type="password" name="password" id="password" placeholder="Password" minlength="8" maxlength="12"
+                   required="true"></th>
+        <br>
+
+        <label for="confirm_password" class="required">Confirm Password </label>
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password"
+               minlength="8" maxlength="12" required="true">
+        <br>
+        <label for="confirm_password" id="validaty"> </label>
+        <br>
+
+    </section>
+
+    <input type="submit" name="submit" id="register" value="Register" onclick="enable()">
+
+    </fieldset>
+
+</form>
+</body>
+</html>

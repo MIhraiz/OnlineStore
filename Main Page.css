@@ -1,0 +1,249 @@
+body {
+    /*font-family: "Lato", sans-serif;*/
+    /*font-family: 'Noto Sans JP', sans-serif;*/
+    font-family: 'Vollkorn', serif;
+    /*font-family: "Sofia", sans-serif;*/
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+
+
+#mainHeader {
+    font-family: "serif", sans-serif;
+    padding-top: 2.5%;
+    text-align: center;
+    color: #333;
+    padding-left: 15%;
+    color: #001f3f;
+
+
+}
+
+#head {
+    border: none;
+    padding-left: 0px;
+    background-color: #f2f2f2;
+}
+
+
+.sidenav {
+    padding-top: 6%;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.3);
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: left;
+
+}
+
+.sidenav > a {
+    padding: 7%;
+    font-size: 1.5em;
+    text-decoration: none;
+    /*color: #FF7F50;*/
+    color: #006400;
+    display: block;
+    font-weight: bold;
+    border-bottom: 0.1em solid #006400;
+}
+
+.sidenav div > a {
+    margin-left: 20%;
+    padding: 3%;
+    padding-left: 15px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #006400;
+    display: block;
+    font-weight: bold;
+
+}
+
+
+.sidenav a:active, .sidenav a:focus, .sidenav a:hover, #hideProd a:active,#hideProd a:hover {
+    background-color: #006400;
+    color: #333333;
+}
+
+iframe{
+    display: block;
+    height: auto;
+    width: 84.9%;
+}
+.dispaly {
+    margin-top: 2.5%;
+    margin-left: 15.1%; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+input, button, textarea {
+    width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=radio] {
+    width: fit-content;
+    resize: none;
+}
+
+input[type=checkbox]{
+    width: fit-content;
+    resize: none;
+}
+select{
+    width: 150px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+#types {
+    width: 600px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #006400;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+button[type=confirm] {
+    background-color: #006400;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #005400;
+}
+
+button[type=confirm]:hover {
+    background-color: #005400;
+}
+
+#orders, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    color: #f2f2f2;
+    background-color: #001f3f;
+
+}
+td > input{
+    width: fit-content;
+    resize: none;
+}
+tr:nth-child(odd){
+     background-color: #f2f2f2;
+ }
+
+tr:nth-child(even){
+    background-color: rgba(51, 51, 51, 0.3);
+}
+#orders{
+    border-collapse: collapse
+}
+
+td {
+    width: fit-content;
+    white-space: nowrap;
+}
+
+th {
+    width: fit-content;
+    white-space: nowrap;
+    background-color: #009879;
+}
+
+td > a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+input[class=ship] {
+    width: 150px;
+}
+
+input[type=text]:focus{
+    background-color: rgba(51, 51, 51, 0.3);
+}
+
+input[type=reset]:hover{
+    background-color: rgba(51, 51, 51, 0.1);
+}
+
+button[type=cancle]:hover{
+    background-color: rgba(51, 51, 51, 0.1);
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+#ibrahimi {
+    width: 450px;
+    height: 250px;
+}
+#ibrahimi:hover{
+    border: 3px solid #006400;
+
+}
+
+.actList > li {
+    list-style-image: url("images/1arrow-green-bullet.png");
+}
+th {
+   background-color: #009879;
+}
+h1 {
+    padding-left: 50px;
+    border: 1px solid #006400;
+    background-color: rgba(51, 51, 51, 0.1);
+}
+p {
+    padding-left: 30px;
+}
+
+.lbTxt {
+    border: 3px darkgreen dot-dash;
+}

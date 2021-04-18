@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Main Page.css">
+
+</head>
+<body>
+<form method="POST" action="add.php" enctype="multipart/form-data">
+    <fieldset>
+        <legend>Add Product</legend>
+    <label for="productName" class="lbTxt required">Product Name:</label>
+    <input type="text" name="productName" id="productName" placeholder="Product Name" maxlength="32" required="true"> <br/>
+
+    <label for="types" class="required">Type: </label>
+    <select name="types" id="types" required="true">
+        <option value="" disabled selected>Choose option</option>
+        <option value="Meal">Meal</option>
+        <option value="Preserved">Preserved</option>
+    </select><br/>
+
+    <label for="price" class="required">Price: </label>
+    <input type="number" name="price" id="price" placeholder="Price" required="true" min="0"><br/>
+
+    <label for="size" class="required">Size: </label>
+    <input type="number" name="size" id="size" placeholder="Size" required="true" min="0">
+    <select name="units" required="true">
+        <option value="disabled" disabled>Choose option</option>
+        <option value="KG">Kg</option>
+        <option value="Letter">Letter</option>
+    </select><br/>
+
+    <label for="quantity" class="required">Quantity: </label>
+    <input type="number" name="quantity" id="quantity" placeholder="Quantity" required="true" min="1"><br/>
+
+    <label for="description" class="lbTxt required">Description: </label><br/>
+    <input type="text" name="description" id="description" placeholder="Description" maxlength="512" required="true" style="width: 700px; height: 70px"><br/>
+
+    <label for="remarks">Remarks: </label><br/>
+    <textarea id="remarks" name="remarks" rows="10" cols="100" maxlength="1024"></textarea><br/>
+    <label class="required">Images: </label><br/>
+    <input type="file" name="file1" id="file1" required="true" accept="image/*"><br/>
+    <input type="file" name="file2" id="file2" required="true" accept="image/*"><br/>
+    <input type="file" name="file3" id="file3" required="true" accept="image/*"><br/>
+    <br>
+    <input id="reset" type="reset" name="reset" value="Clear"><br/>
+    <input type="submit" name="submit" id="add" value="Add">
+    </fieldset>
+</form>
+</body>
+</html>
